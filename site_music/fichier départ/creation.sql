@@ -1,11 +1,6 @@
 CREATE DATABASE site_music character set utf8 collate utf8_general_ci;
 use site_music;
--- create table illustration 
-	-- (id_illustration int auto_increment primary key not null, 
-	-- nom_illustration varchar(50),
-    -- createur_illustration varchar(100),
-    -- date_post_illustration datetime);
-    
+   
 create table morceau 
 	(id_morceau int auto_increment primary key not null,
 	morceau varchar(255),
@@ -13,16 +8,7 @@ create table morceau
     compositeur_morceau varchar(100),
 	description_morceau  text,
 	genre_morceau varchar(255),
-    -- duree_morceau time,
-    -- date_post_morceau datetime,
-	image_morceau varchar(255));
-    
--- create table associer 
-	-- (id_morceau int,
-    -- id_illustration int,
-    -- primary key(id_morceau, id_illustration),
-    -- foreign key(id_morceau) references morceau(id_morceau),
-    -- foreign key(id_illustration) references illustration(id_illustration));
+    image_morceau varchar(255));
     
 create table icone_like
 	(id_icone_like int auto_increment primary key not null,
@@ -76,4 +62,3 @@ add id_utilisateur int,
 add id_morceau int,
 add constraint fk_icone_like_utilisateur foreign key (id_utilisateur) references utilisateur(id_utilisateur),
 add constraint fk_icone_like_morceau foreign key (id_morceau) references morceau(id_morceau);
-

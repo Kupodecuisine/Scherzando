@@ -450,119 +450,8 @@
 									"left": 16,
 									"top": 616,
 									"width": 216,
-									"height": 120,
-									"text": "Scénario erreur : \n3 : erreur de requête\n4 : La requête n'aboutie pas\n5 : erreur de requête\n"
-								},
-								{
-									"_type": "UMLSeqMessageView",
-									"_id": "AAAAAAF/P6CsTxa1+f4=",
-									"_parent": {
-										"$ref": "AAAAAAF8WmjHuiCZLyI="
-									},
-									"model": {
-										"$ref": "AAAAAAF/P6CsTxa0xwA="
-									},
-									"subViews": [
-										{
-											"_type": "EdgeLabelView",
-											"_id": "AAAAAAF/P6CsTxa2Hos=",
-											"_parent": {
-												"$ref": "AAAAAAF/P6CsTxa1+f4="
-											},
-											"model": {
-												"$ref": "AAAAAAF/P6CsTxa0xwA="
-											},
-											"font": "Arial;13;0",
-											"left": 176,
-											"top": 160,
-											"width": 208.1396484375,
-											"height": 13,
-											"alpha": 1.5707963267948966,
-											"distance": 10,
-											"hostEdge": {
-												"$ref": "AAAAAAF/P6CsTxa1+f4="
-											},
-											"edgePosition": 1,
-											"text": "1 : Accéder à la page de suppresion"
-										},
-										{
-											"_type": "EdgeLabelView",
-											"_id": "AAAAAAF/P6CsTxa3l80=",
-											"_parent": {
-												"$ref": "AAAAAAF/P6CsTxa1+f4="
-											},
-											"model": {
-												"$ref": "AAAAAAF/P6CsTxa0xwA="
-											},
-											"visible": false,
-											"font": "Arial;13;0",
-											"left": 280,
-											"top": 145,
-											"height": 13,
-											"alpha": 1.5707963267948966,
-											"distance": 25,
-											"hostEdge": {
-												"$ref": "AAAAAAF/P6CsTxa1+f4="
-											},
-											"edgePosition": 1
-										},
-										{
-											"_type": "EdgeLabelView",
-											"_id": "AAAAAAF/P6CsTxa4nNU=",
-											"_parent": {
-												"$ref": "AAAAAAF/P6CsTxa1+f4="
-											},
-											"model": {
-												"$ref": "AAAAAAF/P6CsTxa0xwA="
-											},
-											"visible": false,
-											"font": "Arial;13;0",
-											"left": 280,
-											"top": 180,
-											"height": 13,
-											"alpha": -1.5707963267948966,
-											"distance": 10,
-											"hostEdge": {
-												"$ref": "AAAAAAF/P6CsTxa1+f4="
-											},
-											"edgePosition": 1
-										},
-										{
-											"_type": "UMLActivationView",
-											"_id": "AAAAAAF/P6CsTxa5krg=",
-											"_parent": {
-												"$ref": "AAAAAAF/P6CsTxa1+f4="
-											},
-											"model": {
-												"$ref": "AAAAAAF/P6CsTxa0xwA="
-											},
-											"font": "Arial;13;0",
-											"left": 405,
-											"top": 176,
-											"width": 14,
-											"height": 29
-										}
-									],
-									"font": "Arial;13;0",
-									"head": {
-										"$ref": "AAAAAAF8WmkHTiDQDNI="
-									},
-									"tail": {
-										"$ref": "AAAAAAF8Wmj3nCCw/8s="
-									},
-									"points": "156:176;405:176",
-									"nameLabel": {
-										"$ref": "AAAAAAF/P6CsTxa2Hos="
-									},
-									"stereotypeLabel": {
-										"$ref": "AAAAAAF/P6CsTxa3l80="
-									},
-									"propertyLabel": {
-										"$ref": "AAAAAAF/P6CsTxa4nNU="
-									},
-									"activation": {
-										"$ref": "AAAAAAF/P6CsTxa5krg="
-									}
+									"height": 85,
+									"text": "Scénario erreur : \n2 : erreur de requête\n3 : La requête n'aboutie pas\n4 : erreur de requête\n5 : page introuvable"
 								},
 								{
 									"_type": "UMLSeqMessageView",
@@ -594,7 +483,7 @@
 												"$ref": "AAAAAAF8WmlejCEOH7Q="
 											},
 											"edgePosition": 1,
-											"text": "2 : Cliquer sur supprimer le morceau"
+											"text": "1 : Cliquer sur supprimer le morceau"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -705,7 +594,7 @@
 												"$ref": "AAAAAAF8Wm7QASHROf8="
 											},
 											"edgePosition": 1,
-											"text": "3 : Requête supprimer compte"
+											"text": "2 : Requête supprimer compte"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -816,7 +705,7 @@
 												"$ref": "AAAAAAF8Wm+UYSHpnLw="
 											},
 											"edgePosition": 1,
-											"text": "4 : Rechercher info"
+											"text": "3 : Rechercher info"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -927,7 +816,7 @@
 												"$ref": "AAAAAAF8Wm/s8yIEaEM="
 											},
 											"edgePosition": 1,
-											"text": "5 : Supprimer info"
+											"text": "4 : Supprimer info"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1028,9 +917,9 @@
 												"$ref": "AAAAAAF8WnBhLiI/sIw="
 											},
 											"font": "Arial;13;0",
-											"left": 502,
+											"left": 498,
 											"top": 404,
-											"width": 153.181640625,
+											"width": 161.87158203125,
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 10,
@@ -1038,7 +927,7 @@
 												"$ref": "AAAAAAF8WnBhLyJArWo="
 											},
 											"edgePosition": 1,
-											"text": "6 : confirmer suppression"
+											"text": "5 : Rechercher page accueil"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1150,7 +1039,7 @@
 												"$ref": "AAAAAAF8WnCeDCJW/kU="
 											},
 											"edgePosition": 1,
-											"text": "7 : Afficher msg \"morceau supprimé\""
+											"text": "6 : Afficher page accueil"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1238,20 +1127,6 @@
 					"messages": [
 						{
 							"_type": "UMLMessage",
-							"_id": "AAAAAAF/P6CsTxa0xwA=",
-							"_parent": {
-								"$ref": "AAAAAAF8WmjHuiCY1jw="
-							},
-							"name": "Accéder à la page de suppresion",
-							"source": {
-								"$ref": "AAAAAAF8Wmj3myCp2F0="
-							},
-							"target": {
-								"$ref": "AAAAAAF8WmkHTiDJ/1o="
-							}
-						},
-						{
-							"_type": "UMLMessage",
 							"_id": "AAAAAAF8WmlejCENKvw=",
 							"_parent": {
 								"$ref": "AAAAAAF8WmjHuiCY1jw="
@@ -1312,7 +1187,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF8WmjHuiCY1jw="
 							},
-							"name": "confirmer suppression",
+							"name": "Rechercher page accueil",
 							"source": {
 								"$ref": "AAAAAAF8WmkaDiDpbhw="
 							},
@@ -1327,7 +1202,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF8WmjHuiCY1jw="
 							},
-							"name": "Afficher msg \"morceau supprimé\"",
+							"name": "Afficher page accueil",
 							"source": {
 								"$ref": "AAAAAAF8WmkHTiDJ/1o="
 							},

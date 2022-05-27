@@ -1,0 +1,21 @@
+
+body {
+	background-color: rgba(0,0,0,1);
+	border: 25px solid white;
+	margin : 5%;
+	padding : 5%;
+}
+
+h1, form, #display{
+	background-color: white;
+	color: black;
+	padding: 2%;
+	text-align: center;
+}
+
+
+ol {
+	margin: 1px;
+	padding: 1px;
+	font-size: 0.75em;
+}

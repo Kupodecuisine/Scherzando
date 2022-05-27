@@ -1,0 +1,447 @@
+/* === HEADER === */
+
+/*bordures intérieures pour le logo + en tête collé */
+#site-header{
+	padding: 0.5%;
+	padding-left: 1%;
+	position: sticky;
+	top: 0;
+}
+
+
+/* === CORPS DE PAGE === */
+
+#main{
+	margin-right: 2%;
+	margin-left: 2%;
+}
+/*on enlève le titre*/
+.container.clr.page-header-inner{
+	display: none;
+}
+/*on réduit la bande blanche en dessous du header*/
+.page-header{
+	padding: 1%;
+}
+
+/*marge des textes et titres de la page d'accueil*/
+.has-text-align-left.h2-accueil.has-large-font-size{
+	margin-right: 10%;
+	margin-left: 10%;
+}
+.has-text-align-left.p-accueil{
+	margin-right: 10%;
+	margin-left: 10%;
+}
+.h2-accueil.has-large-font-size{
+	margin-right: 10%;
+	margin-left: 10%;
+}
+.p-accueil{
+	margin-right: 10%;
+	margin-left: 10%;
+}
+.wp-block-columns.col-accueil{
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+/*marge des textes et titres de la page avance immédiate*/
+.has-text-align-left.h2-avance.has-large-font-size{
+	margin-right: 10%;
+	margin-left: 10%;
+}
+.h2-avance.has-large-font-size{
+	margin-right: 10%;
+	margin-left: 10%;
+}
+.has-text-align-left.p-avance.has-medium-font-size{
+	margin-right: 10%;
+	margin-left: 10%;
+}
+.p-avance.has-medium-font-size{
+	margin-right: 10%;
+	margin-left: 10%;
+}
+.wp-block-columns.groupe-avance{
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+/*modif apparence du slogan de l'image de page d'accueil*/
+.sloganaccueil{
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 20px;
+	padding: 5px;	
+}
+/*modif apparence du solgan de contact -- page d'accueil */
+.has-text-align-center.txt-contact-accueil.has-white-color.has-text-color.has-medium-font-size{
+	background-color: rgba(0,0,0,0.8);
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10%;
+	width: 40%;
+	height: 50px;
+	border-radius: 20px;
+	padding: 5px;	
+}
+@media (max-width: 851.99px) {
+	.has-text-align-center.txt-contact-accueil.has-white-color.has-text-color.has-medium-font-size{
+	width: 50%;
+	height: 50px;
+	}	
+}
+@media (max-width: 700px) {
+	.has-text-align-center.txt-contact-accueil.has-white-color.has-text-color.has-medium-font-size{
+	width: 75%;
+	height: 50px;
+	}	
+}
+@media (max-width: 480px) {
+	.has-text-align-center.txt-contact-accueil.has-white-color.has-text-color.has-medium-font-size{
+	width: 75%;
+	height: 100px;
+	}	
+}
+@media (max-width: 319px) {
+	.has-text-align-center.txt-contact-accueil.has-white-color.has-text-color.has-medium-font-size{
+	width: 75%;
+	height: 150px;
+	}	
+}
+
+/*modif couleur de fond des avis*/
+.avis1, .avis2, .avis3{
+	background-color: #8ed1fc;
+	border-radius: 20px;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	margin: 5px;
+}
+/*gestion des marges pour les formulaire contact et nous rejoindre*/
+.wpcf7-form.init{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+@media (max-width: 600px) {
+	.wpcf7-form.init{
+	margin-left: 2%;
+	margin-right: 0%;
+	}
+}
+@media (max-width: 300px) {
+	.wpcf7-form.init{
+	margin-left: 0%;
+	margin-right: 0%;
+	}
+}
+
+/*taille vidéo*/
+.videoaccueil{
+	width: 850px;
+}
+@media (max-width: 900px) {
+	.videoaccueil{
+	width: 650px;
+	}
+}
+@media (max-width: 700px) {
+	.videoaccueil{
+	width: 450px;
+	}
+}
+@media (max-width: 500px) {
+	.videoaccueil{
+	width: 300px;
+	}
+}
+@media (max-width: 310px) {
+	.videoaccueil{
+	width: 200px;
+	}
+}
+
+/*---gestion du groupe des chiffres clés + responsivité---*/
+.wp-block-cover.aligncenter.is-light.img-accueil-chiffres{
+	display: none;
+}
+.ingroupe-accueil-responsive{
+	display: none;
+}
+.groupe-accueil .wp-block-group__inner-container{
+	display: flex;
+	justify-content: center;
+}
+.ingroupe-accueil{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		width: 25em;
+		height: 25em;
+		color:#000;
+ 	 	background: #F9EE8C;
+ 	 	margin: 33px;
+		padding: 33px;
+		box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+}
+@media (max-width: 1200px) {
+	.ingroupe-accueil{
+		width: 20em;
+		height: 20em;
+	}
+}
+@media (max-width: 1050px) {
+	.groupe-accueil .wp-block-group__inner-container{
+		display: none;
+	}
+	.ingroupe-accueil-responsive{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center; 
+		width: 25em;
+		height: 25em;
+		color:#000;
+ 	 	background: #F9EE8C;
+ 	 	margin-left: auto;
+		margin-right: auto;
+			box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+	}
+}
+@media (max-width: 800px) {
+	.ingroupe-accueil-responsive{
+		width: 22em;
+		height: 22em;
+	}
+}
+@media (max-width: 600px) {
+	.ingroupe-accueil-responsive{
+		width: 20em;
+		height: 20em;
+	}
+}
+@media (max-width: 400px) {
+	.ingroupe-accueil-responsive{
+ 	 	width: 20em;
+		height: 20em;
+	}
+}
+@media (max-width: 350px) {
+	.ingroupe-accueil-responsive{
+ 	 	width: 18em;
+	}
+}
+@media (max-width: 300px) {
+	.ingroupe-accueil-responsive{
+ 	 	width: 16em;
+	}
+}
+
+/*=========================*/
+/*affichage désaffichage des différents carousel*/
+.wp-block-columns.are-vertically-aligned-top.old-avis{
+	display: none;
+}
+@media (min-width: 1300px) {
+	#slider_1023{
+		display: none;
+	}
+	#slider_1025{
+		display: none;
+	}
+}
+@media (max-width: 1300px) {
+	#slider_761{
+		display: none;
+	}
+	#slider_1025{
+		display: none;
+	}
+}
+@media (max-width: 900px) {
+	#slider_761{
+		display: none;
+	}
+	#slider_1023{
+		display: none;
+	}
+	#slider_1025{
+		display: block;
+	}
+}
+/* ======================= */
+/*gestion du carousel de txt + image*/
+.avis{
+	display: flex;
+	justify-content: center;
+	gap: 5%;
+	margin-left: 2%;
+	margin-right: 2%;
+	border-radius: 15px;
+}
+.avis-slide{
+	background-color: rgba(150,150,150,0.2);
+	border-radius: 10px;
+	padding: 1%;
+}
+.avis-slide:hover{
+	background-color: rgba(150,150,150,0.4);
+}
+.slide-div{
+	display: flex;
+	gap: 5%;
+}
+.slide-div img{
+	border-radius: 15px;
+}
+
+.alignnone.size-medium.wp-image-538{
+	width: 200px;
+	height: 200px;
+}
+.alignnone.size-medium.wp-image-1020{
+	width: 200px;
+	height: 200px;
+}
+.alignnone.size-medium.wp-image-1021{
+	width: 200px;
+	height: 200px;
+}
+.alignnone.size-medium.wp-image-1016{
+	width: 200px;
+	height: 200px;
+}
+.alignnone.size-medium.wp-image-1017{
+	width: 200px;
+	height: 200px;
+}
+.alignnone.size-medium.wp-image-539{
+	width: 200px;
+	height: 200px;
+}
+.slide-div p{
+	width: 200px;
+}
+/* ======================= */
+/*gestion du carousel tablette*/
+.avis-tablette{
+	display: flex;
+	gap: 5%;
+	justify-content: center;
+	margin-left: 2%;
+	margin-right: 2%;
+	border-radius: 15px;
+}
+.slide-div-tablette{
+	display: flex;
+	gap: 5%;
+}
+.avis-slide-tablette{
+	background-color: rgba(150,150,150,0.2);
+	border-radius: 10px;
+	padding: 1%;
+}
+.avis-slide-tablette:hover{
+	background-color: rgba(150,150,150,0.4);
+}
+.slide-div-tablette p{
+	width: 250px;
+}
+.slide-div-tablette img{
+	border-radius: 15px;
+	height: 200px;
+	width: 200px;
+}
+/* ======================= */
+/*gestion du carousel mobile*/
+.avis-mobile{
+	display: flex;
+	gap: 5%;
+	justify-content: center;
+	margin-left: 2%;
+	margin-right: 2%;
+	border-radius: 15px;
+}
+.slide-div-mobile{
+	display: flex;
+	gap: 5%;
+}
+.avis-slide-mobile{
+	background-color: rgba(150,150,150,0.2);
+	border-radius: 10px;
+	padding: 1%;
+}
+.avis-slide-mobile:hover{
+	background-color: rgba(150,150,150,0.4);
+}
+.slide-div-mobile p{
+	width: 250px;
+}
+.slide-div-mobile img{
+	border-radius: 15px;
+	height: 200px;
+	width: 200px;
+}
+@media (max-width: 400px) {
+	.slide-div-mobile{
+		flex-direction: column;
+		padding: 2%;
+	}
+	.slide-div-mobile p{
+		margin-top: 2%;
+	}
+}
+
+/* === FOOTER === */
+
+/*placement du logo*/
+.footer-widget.widget_block.widget_media_image.clr{
+	margin-top: -5%;
+}
+
+/*placement des boutons*/
+.footer-widget.widget_block.clr{
+	margin-top: 5%;
+}
+.footer-box.span_1_of_3.col.col-2{
+	display: flex;
+	justify-content: center;
+}
+
+/*placement des logo*/
+.footer-box.span_1_of_3.col.col-3{
+	margin-top: 5%;
+	display: flex;
+	text-align: start;
+	justify-content: flex-end;
+	gap: 10px;
+}
+
+/*responsivité du footer à partir de 900px de large*/
+@media (max-width: 959px) {
+	.footer-box.span_1_of_3.col.col-2{
+		width: 40%;
+	}
+	.footer-box.span_1_of_3.col.col-3{
+		width: 20%;
+	} 
+}
+/*responsivité du footer à partir de 770px de large*/
+@media (max-width: 767px) {
+	.footer-widgets-inner{
+		display: flex;	
+		flex-wrap: wrap;
+	}
+	.footer-box.span_1_of_3.col.col-2{
+		justify-content: center;
+	}
+	
+	.footer-box.span_1_of_3.col.col-1{
+		display: none;
+	}
+	.footer-box.span_1_of_3.col.col-3{
+		justify-content: center;
+	} 
+}

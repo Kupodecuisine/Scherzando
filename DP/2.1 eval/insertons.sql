@@ -1,5 +1,5 @@
 # insertions
-
+use exo_bdd;
 insert into chaine_de_prod (nom_chaine) values ("LA TURBO CHAINE");
 insert into chaine_de_prod (nom_chaine) values ("CHAINE 2");
 insert into entree_de_chaine (nom_chainestart) values ("L'ENTRÉE DE LA TURBO CHAINE"); 

@@ -1,3 +1,4 @@
+
 // je crée une var où je stocke la base de l'url de l'api
 const url = "https://www.prevision-meteo.ch/services/json/";
 
@@ -29,7 +30,6 @@ function displayData(data){
 	newImg.setAttribute("src", data.current_condition.icon_big);
 	div.appendChild(newImg);
 
-
 	//déclaration et insertion du p
 	const newP = document.createElement("p");
 	newP.innerHTML =`Température: ${data.current_condition.tmp}°C <br> 
@@ -38,7 +38,6 @@ function displayData(data){
 	div.appendChild(newP);
 
 	let days = [data.fcst_day_1, data.fcst_day_2, data.fcst_day_3, data.fcst_day_4];
-	console.log(days);
 	
 	for(let day in days){
 		let newH5 = document.createElement("h5");
@@ -53,21 +52,15 @@ function displayData(data){
 		newP2.innerHTML =`${days[day].condition}, <br> 
 						Température max : ${days[day].tmax}°C, température min : ${days[day].tmin}°C`; 
 		div.appendChild(newP2);
-	
-	
-	
+		
 		for(let i = 0; i <= 23; i++){
 			
 			let hour = days[day].hourly_data[`${i}H00`];
-
 			const ol = document.createElement("ol");
-			
 			ol.innerHTML = `${i}H00 : ${hour.CONDITION}`;
 			div.appendChild(ol);
 		}
 	}
-	
-	
 }
 
 // je fais une fonction de requête à l'api
@@ -75,22 +68,18 @@ function requestApi(event){
 	event.preventDefault();
 	// je récupère l'input de la ville
 	const city = document.querySelector("form input[name='city']");
-	// console.log(city.value);
 	// je fais l'envoi de la requête en concaténant la base de l'url avec la valeur de city
 	fetch(`${url}${city.value}`)
 		//quand j'obtiens une réponse je mets le body en json/
 		.then(response => response.json())
 		// puis je traite les données reçues
 		.then(data => {
-			// console.log("success: ", data);
-			
 			displayData(data);
 		})
 		//en cas d'erreur je lève une exception et j'affiche l'erreur
 		.catch((error) => {
 			console.log("Error: ", error);
 		});
-		
 }
 // récupération des inputs
 const inputs = document.querySelectorAll("input");

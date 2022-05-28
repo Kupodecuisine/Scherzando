@@ -1,5 +1,5 @@
-create database app character set utf8 collate utf8_general_ci;
-use app; 
+create database exo_bdd character set utf8 collate utf8_general_ci;
+use exo_bdd; 
 create table utilisateur (
 	id_utilisateur int auto_increment primary key not null, 
     identifiant_utilisateur varchar(50),

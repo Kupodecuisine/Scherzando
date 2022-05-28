@@ -1,0 +1,44 @@
+<?php
+
+    try{
+
+        $query = $database->query("SELECT * FROM livre
+        INNER JOIN etat ON livre.id_etat = etat.id_etat
+        INNER JOIN genre ON livre.id_genre = genre.id_genre
+        WHERE titre_livre LIKE '%$search%' 
+        OR auteur_livre LIKE '%$search%'
+        OR editeur_livre LIKE '%$search%'
+        OR nbr_pages_livre LIKE '%$search%'
+        OR prix_livre LIKE '%$search%'
+        OR nom_etat LIKE '%$search%'
+        OR nom_genre LIKE '%$search%'
+        ");
+
+        while($data =$query->fetch()){
+            if($data['stock_livre'] == 1){
+                $data['stock_livre'] = "En stock";
+            } else{
+                $data['stock_livre'] = "Indisponible";
+            }
+
+            echo 
+                '<div>
+                    <img src="'.$data['img_livre'].'"></img>
+                    <section>
+                        <p><strong>Titre:</strong> '.$data['titre_livre'].'</p>
+                        <p><strong>Auteur:</strong> '.$data['auteur_livre'].'</p>
+                        <p><strong>Éditeur:</strong> '.$data['editeur_livre'].'</p>
+                        <p><strong>Nombre de pages:</strong> '.$data['nbr_pages_livre'].'</p>
+                        <p><strong>Prix:</strong> '.$data['prix_livre'].'€</p>
+                        <p><strong>Stock:</strong> '.$data['stock_livre'].'</p>
+                        <p><strong>État:</strong> '.$data['nom_etat'].'</p>
+                        <p><strong>Genre:</strong> '.$data['nom_genre'].'</p>
+                    </section> 
+                </div>';
+        }
+    } catch(Exception $e){
+            die('Erreur : ' .$e->getMessage());
+    }
+    
+?>
+

@@ -1,5 +1,6 @@
 # maj suppr etc
-use app;
+
+use exo_bdd;
 update competences
 set nom_comp = "SPÉCIALITÉ ÉLECTRICITÉ"
 where id_comp = 2;

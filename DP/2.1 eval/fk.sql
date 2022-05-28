@@ -1,6 +1,6 @@
-# clés étrangères et tables d'association
+# clés étrangères et tables d association
 
-use app;
+use exo_bdd;
 
 alter table utilisateur
 add id_droit int,
